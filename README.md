@@ -47,3 +47,17 @@ I would use a `while` loop when I want a program to keep repeating until a parti
 `unbreakable.py` — Demonstrates handling errors so the program can continue running safely.
 
 The `if` check cannot catch `abc` on its own because `abc` causes a `ValueError` when Python tries to convert it to an integer. The `if` statement can check a value after conversion, but `try/except` is needed to handle the conversion error itself.
+
+# PLP Python Week 7 Assignment
+
+This repository contains my Python Week 7 assignment.
+
+* `shopping_list.py` — manages a shopping list by allowing the user to add, remove, show, and finish the list.
+* `list_report.py` — prints a numbered list, counts item names with more than four letters, and finds the longest item name.
+* `screenshots/` — contains screenshots showing the programs running successfully.
+* `README.md` — explains the assignment files and why checking `in` before `.remove()` is important.
+
+### Why check `in` before `.remove()`?
+
+It is safer to check whether an item is in the list before calling `.remove()` because `.remove()` causes a `ValueError` if the item does not exist. Using `if item in shopping_list` prevents the program from crashing and allows us to display a helpful message such as, "That item is not on your list."
+
